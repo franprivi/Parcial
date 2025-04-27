@@ -1,0 +1,263 @@
+/* home.html css */
+.color {
+  margin: 0;
+  padding: 0;
+  background-color: #FFCC99;
+  font-family: Arial, sans-serif;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
+.menu {
+  width: 100%;
+  background-color: #301902;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Lucida Sans', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover {
+  background-color: #4a2c1a;
+}
+
+.titulo1 {
+  text-align: center;
+  font-family: 'Lucida Sans', sans-serif;
+  background-color: #301902;
+  width: 30%;
+  margin: 1.25rem auto;
+  border-radius: 2rem;
+  color: white;
+}
+
+.titulo1,
+.tabla {
+  margin-bottom: 0.625rem;
+}
+
+.tabla {
+  font-family: 'Lucida Sans', sans-serif;
+  width: 90%;
+  border-collapse: separate;
+  border-spacing: 2rem;
+  margin: 2rem auto;
+}
+
+.tabla td,
+.tabla th {
+  border: 1px solid #301902;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.625rem;
+  box-shadow: 0.125rem 0.125rem 0.313rem #301902;
+  vertical-align: top;
+}
+
+.materias {
+  font-family: 'Lucida Sans', sans-serif;
+  background-color: #301902;
+  color: white;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  margin-bottom: 0.625rem;
+  border-radius: 0.625rem;
+}
+
+footer {
+  background-color: #301902;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: auto;
+}
+
+.vacia {
+  visibility: hidden;
+  border: none;
+}
+
+.tabla2 {
+  width: 60%;
+  text-align: center;
+  margin: 2rem auto;
+  border-collapse: separate;
+}
+
+.tabla2 td {
+  border: 1px solid #301902;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.625rem;
+  box-shadow: 0.125rem 0.125rem 0.313rem #301902;
+  vertical-align: top;
+}
+
+.formulario {
+  width: 40%;
+  margin: 1.25rem auto;
+  padding: 1.25rem;
+  border-radius: 2rem;
+  background-color: #301902;
+  color: white;
+  font-family: 'Lucida Sans', sans-serif;
+}
+
+.agrandar {
+  width: 90%;
+  height: 2.5rem;
+}
+
+.titulo1,
+.formulario {
+  margin-bottom: 6rem;
+}
+
+/* sobremi.html css */
+.Foto {
+  width: 15rem;
+  height: auto;
+  margin: 0 auto;
+  color: #301902;
+  border: 0.313rem solid #301902;
+  border-radius: 2rem;
+}
+.Foto img {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+}
+
+.tabla3 {
+  width: 60%;
+  text-align: center;
+  margin: 2rem auto;
+  border-collapse: separate;
+  border-spacing: 0 2.5rem;
+  table-layout: fixed;
+  border: none;
+}
+
+.informacion p {
+  font-family: 'Lucida Sans', sans-serif;
+  background-color: #301902;
+  color: white;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 2rem;
+}
+
+/* materias2025.html css */
+.listamaterias {
+  list-style-type: none;
+  padding: 1rem;
+  margin: 0 auto;
+  font-family: 'Lucida Sans', sans-serif;
+  background-color: #301902;
+  color: white;
+  width: 50%;
+  border-radius: 2rem;
+}
+
+.titulo2 {
+  text-align: center;
+  font-family: 'Lucida Sans', sans-serif;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.titulo2,
+.listamaterias {
+  margin-bottom: 0.625rem;
+}
+
+/* avisos.html css */
+.listaavisos {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  font-family: 'Lucida Sans', sans-serif;
+  background-color: #301902;
+  color: white;
+  width: 50%;
+  border-radius: 2rem;
+}
+
+/* diseñoweb.html */
+.body2 {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #FFCC99;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.contenedor {
+  background-color: #FFCC99;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.625rem;
+  flex: 1;
+  padding: 0.625rem;
+  box-sizing: border-box;
+}
+
+.izquierdo1, .izquierdo2, .derecho {
+  background-color: #6b3f2f;
+  color: white;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  text-align: center;
+}
+
+.derecho {
+  grid-row: span 2;
+}
+
+footer {
+  background-color: #301902;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.lista {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  text-align: left;
+  margin: 0;
+}
+
+.lista li {
+  font-family: 'Lucida Sans', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.625rem;
+  text-align: left;
+}
