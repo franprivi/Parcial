@@ -29,10 +29,8 @@ document.getElementById("contactoForm").addEventListener("submit", function(even
 const toggleBtn = document.getElementById("toggleModeBtn");
 
 toggleBtn.addEventListener("click", () => {
-    // Agrega o quita 'dark-mode' sin borrar 'color'
     document.body.classList.toggle("dark-mode");
 
-    // Cambia el texto del botón
     if (document.body.classList.contains("dark-mode")) {
         toggleBtn.textContent = "Modo Claro";
     } else {
