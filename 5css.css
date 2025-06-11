@@ -261,3 +261,39 @@ footer {
   margin-bottom: 0.625rem;
   text-align: left;
 }
+
+
+/* formulario */
+.form-input {
+width: 100%;
+padding: 10px;
+margin: 8px 0 15px 0;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+box-sizing: border-box;
+transition: border-color 0.3s ease;
+}
+.form-input:focus {
+border-color: #007BFF;
+background-color: #f0f8ff;
+outline: none;
+}
+
+.error {
+color: red;
+font-size: 14px;
+margin-bottom: 10px;
+}
+
+.success {
+color: green;
+font-size: 16px;
+margin-top: 10px;
+}
+
+.formulario {
+max-width: 500px;
+margin: auto;
+padding: 20px;
+}

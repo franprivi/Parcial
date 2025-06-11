@@ -28,6 +28,8 @@
         <form id="contactoForm">
         <h2>Formulario para contactarse conmigo:</h2>
 
+        <div class="error" id="mensajeError"></div>
+
         <label for="nombre">Nombre</label><br>
         <input type="text" id="nombre" name="nombre" class="form-input" required><br>
 
@@ -41,9 +43,11 @@
         <input type="email" id="email" name="email" class="form-input" required><br>
 
         <label for="mensaje">Mensaje</label><br>
-        <textarea id="mensaje" name="mensaje" class="form-input" required></textarea><br><br>
+        <textarea id="mensaje" name="mensaje" class="form-input" required></textarea><br>
 
-        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+        <button type="submit" class="form-input">Enviar</button>
+
+        <div class="success" id="mensajeExito"></div>
     </form>
     </div>
 
