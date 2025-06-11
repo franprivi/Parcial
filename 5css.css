@@ -300,12 +300,17 @@ padding: 20px;
 
 
 
-body.dark-mode {
-    background-color: #121212;
+.theme-buttons button {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #4a2c1a;
     color: white;
+    cursor: pointer;
+    font-family: 'Lucida Sans', sans-serif;
 }
 
-/* Ejemplo opcional: enlaces en modo oscuro */
-body.dark-mode a {
-    color: #90caf9;
+.theme-buttons button:hover {
+    background-color: #6b3f2f;
 }

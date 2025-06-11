@@ -26,14 +26,13 @@ document.getElementById("contactoForm").addEventListener("submit", function(even
         document.getElementById("contactoForm").reset();
     }
 });
-const toggleBtn = document.getElementById("toggleModeBtn");
+const lightModeBtn = document.getElementById("lightModeBtn");
+const darkModeBtn = document.getElementById("darkModeBtn");
 
-toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+lightModeBtn.addEventListener("click", () => {
+    document.body.classList.remove("dark-mode");
+});
 
-    if (document.body.classList.contains("dark-mode")) {
-        toggleBtn.textContent = "Modo Claro";
-    } else {
-        toggleBtn.textContent = "Modo Oscuro";
-    }
+darkModeBtn.addEventListener("click", () => {
+    document.body.classList.add("dark-mode");
 });
