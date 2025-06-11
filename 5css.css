@@ -314,3 +314,19 @@ padding: 20px;
 .theme-buttons button:hover {
     background-color: #6b3f2f;
 }
+
+
+
+
+.menu nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.theme-buttons {
+    display: flex;
+    gap: 0.5rem;
+}

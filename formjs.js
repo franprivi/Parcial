@@ -26,13 +26,17 @@ document.getElementById("contactoForm").addEventListener("submit", function(even
         document.getElementById("contactoForm").reset();
     }
 });
-const lightModeBtn = document.getElementById("lightModeBtn");
-const darkModeBtn = document.getElementById("darkModeBtn");
+window.addEventListener("DOMContentLoaded", () => {
+    const lightModeBtn = document.getElementById("lightModeBtn");
+    const darkModeBtn = document.getElementById("darkModeBtn");
 
-lightModeBtn.addEventListener("click", () => {
-    document.body.classList.remove("dark-mode");
-});
+    if (lightModeBtn && darkModeBtn) {
+        lightModeBtn.addEventListener("click", () => {
+            document.body.classList.remove("dark-mode");
+        });
 
-darkModeBtn.addEventListener("click", () => {
-    document.body.classList.add("dark-mode");
+        darkModeBtn.addEventListener("click", () => {
+            document.body.classList.add("dark-mode");
+        });
+    }
 });
