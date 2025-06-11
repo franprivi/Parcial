@@ -27,16 +27,34 @@ document.getElementById("contactoForm").addEventListener("submit", function(even
     }
 });
 window.addEventListener("DOMContentLoaded", () => {
-    const lightModeBtn = document.getElementById("lightModeBtn");
-    const darkModeBtn = document.getElementById("darkModeBtn");
+  const toggle = document.getElementById("toggleThemeBtn");
+  const html = document.documentElement;
+  const iconLuna = document.getElementById("iconLuna");
+  const iconSol = document.getElementById("iconSol");
 
-    if (lightModeBtn && darkModeBtn) {
-        lightModeBtn.addEventListener("click", () => {
-            document.body.classList.remove("dark-mode");
-        });
+  // Cargar tema guardado
+  const temaGuardado = localStorage.getItem("tema") || "light";
+  html.setAttribute("data-bs-theme", temaGuardado);
+  if (temaGuardado === "dark") {
+    document.body.classList.add("dark-mode");
+    iconLuna.style.display = "none";
+    iconSol.style.display = "inline";
+  }
 
-        darkModeBtn.addEventListener("click", () => {
-            document.body.classList.add("dark-mode");
-        });
+  toggle.addEventListener("click", () => {
+    const actual = html.getAttribute("data-bs-theme") || "light";
+    const nuevo = actual === "light" ? "dark" : "light";
+    html.setAttribute("data-bs-theme", nuevo);
+    localStorage.setItem("tema", nuevo);
+
+    if (nuevo === "dark") {
+      document.body.classList.add("dark-mode");
+      iconLuna.style.display = "none";
+      iconSol.style.display = "inline";
+    } else {
+      document.body.classList.remove("dark-mode");
+      iconLuna.style.display = "inline";
+      iconSol.style.display = "none";
     }
+  });
 });
