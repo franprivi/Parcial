@@ -26,13 +26,15 @@ document.getElementById("contactoForm").addEventListener("submit", function(even
         document.getElementById("contactoForm").reset();
     }
 });
-const lightBtn = document.getElementById("lightModeBtn");
-const darkBtn = document.getElementById("darkModeBtn");
+const toggleBtn = document.getElementById("toggleModeBtn");
 
-lightBtn.addEventListener("click", () => {
-    document.body.classList.remove("dark-mode");
-});
+toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
 
-darkBtn.addEventListener("click", () => {
-    document.body.classList.add("dark-mode");
+    // Opcional: cambiar texto del botón
+    if (document.body.classList.contains("dark-mode")) {
+        toggleBtn.textContent = "Modo claro";
+    } else {
+        toggleBtn.textContent = "Modo oscuro";
+    }
 });
