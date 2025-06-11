@@ -30,26 +30,28 @@ window.addEventListener("DOMContentLoaded", () => {
   const toggle = document.getElementById("toggleThemeBtn");
   const html = document.documentElement;
 
-  // Aplicar el tema guardado si existe
-  const temaGuardado = localStorage.getItem("tema") || "light";
-  html.setAttribute("data-bs-theme", temaGuardado);
-  if (temaGuardado === "dark") {
-    document.body.classList.add("dark-mode");
-    toggle.textContent = "Modo Claro";
-  }
+  // Asegurarse de que el botón exista
+  if (!toggle) return;
 
+  // Leer tema guardado
+  const temaGuardado = localStorage.getItem("tema") || "light";
+
+  // Aplicar el tema al html y al body
+  html.setAttribute("data-bs-theme", temaGuardado);
+  document.body.classList.toggle("dark-mode", temaGuardado === "dark");
+
+  // Cambiar texto del botón al cargar
+  toggle.textContent = temaGuardado === "dark" ? "Modo Claro" : "Modo Oscuro";
+
+  // Evento click del botón
   toggle.addEventListener("click", () => {
     const actual = html.getAttribute("data-bs-theme") || "light";
     const nuevo = actual === "light" ? "dark" : "light";
+
     html.setAttribute("data-bs-theme", nuevo);
     localStorage.setItem("tema", nuevo);
+    document.body.classList.toggle("dark-mode", nuevo === "dark");
 
-    if (nuevo === "dark") {
-      document.body.classList.add("dark-mode");
-      toggle.textContent = "Modo Claro";
-    } else {
-      document.body.classList.remove("dark-mode");
-      toggle.textContent = "Modo Oscuro";
-    }
+    toggle.textContent = nuevo === "dark" ? "Modo Claro" : "Modo Oscuro";
   });
 });
