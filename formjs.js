@@ -31,7 +31,7 @@ document.getElementById("contactoForm").addEventListener("submit", function(even
     if (errores.length > 0) {
         errorDiv.innerText = errores.join("\n");
     } else {
-        exitoDiv.innerText = `Gracias por su contacto, ${nombre}. En breve le estaré respondiendo.`;
+        alert("Gracias por su contacto, crack. En breve le estaré respondiendo.");
         document.getElementById("contactoForm").reset();
     }
 });
