@@ -29,16 +29,13 @@ document.getElementById("contactoForm").addEventListener("submit", function(even
 window.addEventListener("DOMContentLoaded", () => {
   const toggle = document.getElementById("toggleThemeBtn");
   const html = document.documentElement;
-  const iconLuna = document.getElementById("iconLuna");
-  const iconSol = document.getElementById("iconSol");
 
-  // Cargar tema guardado
+  // Aplicar el tema guardado si existe
   const temaGuardado = localStorage.getItem("tema") || "light";
   html.setAttribute("data-bs-theme", temaGuardado);
   if (temaGuardado === "dark") {
     document.body.classList.add("dark-mode");
-    iconLuna.style.display = "none";
-    iconSol.style.display = "inline";
+    toggle.textContent = "Modo Claro";
   }
 
   toggle.addEventListener("click", () => {
@@ -49,12 +46,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
     if (nuevo === "dark") {
       document.body.classList.add("dark-mode");
-      iconLuna.style.display = "none";
-      iconSol.style.display = "inline";
+      toggle.textContent = "Modo Claro";
     } else {
       document.body.classList.remove("dark-mode");
-      iconLuna.style.display = "inline";
-      iconSol.style.display = "none";
+      toggle.textContent = "Modo Oscuro";
     }
   });
 });
