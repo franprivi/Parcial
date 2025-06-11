@@ -305,7 +305,6 @@ body.dark-mode {
     color: white;
 }
 
-/* Ejemplo opcional: enlaces en modo oscuro */
 body.dark-mode a {
     color: #90caf9;
 }
