@@ -300,11 +300,13 @@ padding: 20px;
 
 
 
-body.dark-mode {
+body.color.dark-mode,
+body.body2.dark-mode {
     background-color: #121212;
     color: white;
 }
 
-body.dark-mode a {
+body.color.dark-mode a,
+body.body2.dark-mode a {
     color: #90caf9;
 }
