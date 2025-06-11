@@ -22,7 +22,7 @@ document.getElementById("contactoForm").addEventListener("submit", function(even
     if (errores.length > 0) {
         alert(errores.join("\n"));
     } else {
-        alert("¡Gracias por tu contacto, " + nombre + "! En breve te estaré respondiendo.");
+        alert("¡Gracias por tu contacto," + nombre + "! En breve te estaré respondiendo.");
         document.getElementById("contactoForm").reset();
     }
 });
