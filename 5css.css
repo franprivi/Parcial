@@ -190,7 +190,14 @@ footer {
   color: black;
   border-radius: 2rem;
 }
-
+.titulo3 {
+  text-align: left;
+  font-family: 'Lucida Sans', sans-serif;
+  width: 70%;
+  margin: 0 auto;
+  color: black;
+  border-radius: 2rem;
+}
 .titulo2,
 .listamaterias {
   margin-bottom: 0.625rem;
