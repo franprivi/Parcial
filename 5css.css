@@ -134,7 +134,15 @@ footer {
 .formulario {
   margin-bottom: 6rem;
 }
-
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .tabla, .tabla2, .tabla3, .listamaterias, .formulario {
+        width: 100%;
+    }
+}
 /* sobremi.html css */
 .Foto {
   width: 15rem;
