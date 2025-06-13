@@ -1,3 +1,4 @@
+
 /* home.html css */
 .color {
   margin: 0;
@@ -47,7 +48,7 @@
   width: 30%;
   margin: 1.25rem auto;
   border-radius: 2rem;
-  color: white;
+  color: black;
 }
 
 .titulo1,
@@ -76,7 +77,7 @@
 .materias {
   font-family: 'Lucida Sans', sans-serif;
   background-color: #301902;
-  color: white;
+  color: black;
   padding: 0.5rem 1rem;
   display: inline-block;
   margin-bottom: 0.625rem;
@@ -85,7 +86,7 @@
 
 footer {
   background-color: #301902;
-  color: white;
+  color: black;
   text-align: center;
   padding: 1rem;
   width: 100%;
@@ -162,7 +163,7 @@ footer {
 .informacion p {
   font-family: 'Lucida Sans', sans-serif;
   background-color: #301902;
-  color: white;
+  color: black;
   width: 90%;
   text-align: center;
   margin: 0 auto;
@@ -176,7 +177,7 @@ footer {
   margin: 0 auto;
   font-family: 'Lucida Sans', sans-serif;
   background-color: #301902;
-  color: white;
+  color: black;
   width: 50%;
   border-radius: 2rem;
 }
@@ -186,6 +187,8 @@ footer {
   font-family: 'Lucida Sans', sans-serif;
   width: 70%;
   margin: 0 auto;
+  color: black;
+  border-radius: 2rem;
 }
 
 .titulo2,
@@ -200,7 +203,7 @@ footer {
   margin: 0 auto;
   font-family: 'Lucida Sans', sans-serif;
   background-color: #301902;
-  color: white;
+  color: black;
   width: 50%;
   border-radius: 2rem;
 }
@@ -229,7 +232,7 @@ footer {
 
 .izquierdo1, .izquierdo2, .derecho {
   background-color: #6b3f2f;
-  color: white;
+  color: black;
   padding: 1.25rem;
   border-radius: 0.625rem;
   text-align: center;
@@ -262,7 +265,6 @@ footer {
   text-align: left;
 }
 
-
 /* formulario */
 .form-input {
 width: 100%;
@@ -280,25 +282,12 @@ background-color: #f0f8ff;
 outline: none;
 }
 
-.error {
-color: red;
-font-size: 14px;
-margin-bottom: 10px;
-}
-
-.success {
-color: green;
-font-size: 16px;
-margin-top: 10px;
-}
-
 .formulario {
 max-width: 500px;
 margin: auto;
 padding: 20px;
+color: black;
 }
-
-
 
 .theme-buttons button {
   background-color: #4a2c1a;
@@ -314,8 +303,6 @@ padding: 20px;
   background-color: #6b3f2f;
 }
 
-
-
 .menu nav {
     display: flex;
     justify-content: space-between;
@@ -327,4 +314,59 @@ padding: 20px;
 .theme-buttons {
     display: flex;
     gap: 0.5rem;
+}
+
+/* Modo claro */
+.claro {
+    background-color: #FFCC99;
+    color: black;
+}
+/* Modo oscuro */
+.oscuro {
+    background-color: #020202;
+    color: white;
+}
+
+/* Ajuste para elementos específicos en modo oscuro */
+
+.oscuro .menu {
+    background-color: #4a2c1a;
+}
+.oscuro .materias {
+    background-color: #4a2c1a;
+}
+.oscuro.color {
+    background-color: #020202 !important;
+    color: white !important;
+}
+.oscuro .listamaterias {
+    background-color: #121212 !important;
+    color: white !important;
+    border-color: white; 
+}
+.oscuro .listaavisos {
+    background-color: #121212 !important;
+    color: white !important;
+    border-color: white; 
+}
+.oscuro .footer {
+    background-color: #4a2c1a;
+    color: white;
+}
+.oscuro .titulo1,
+.oscuro .titulo2 {
+    background-color: #4a2c1a;
+    color: white;
+}
+.oscuro .materias {
+    background-color: #4a2c1a;
+    color: white;
+}
+.oscuro .informacion p {
+    background-color: #4a2c1a;
+    color: white;
+}
+.oscuro .formulario {
+    background-color: #4a2c1a;
+    color: white;
 }
